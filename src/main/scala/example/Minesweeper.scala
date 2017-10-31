@@ -16,9 +16,9 @@ object Minesweeper {
        if (list(r)(c) == '*') '*'
        else {
          var count = 0
-         for (i <- r - 1 until r + 1) {
+         for (i <- r - 1 to r + 1) {
            if(!(i<0 || i>list.length-1))
-           for (j <- c - 1 until c + 1) {g
+           for (j <- c - 1 to  c + 1) {
              if((!(j<0 || j>list(i).length-1)) && list(i)(j)== '*')
              count = count +1
            }
@@ -30,9 +30,9 @@ object Minesweeper {
     var output = List[List[Char]]()
     if (board.isEmpty) return Nil
     else
-      for (row <- 0 until board.length) {
+      for (row <- 0 to board.length-1) {
         var output1 = List[Char]()
-        for (col <- 0 until board(row).length) {
+        for (col <- 0 to board(row).length-1) {
            output1 = output1 :+ (Decider(board, row, col))
 
         }

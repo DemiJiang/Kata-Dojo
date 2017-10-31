@@ -39,4 +39,20 @@ class MinesweeperTestSuite extends FlatSpec with Matchers{
 
     Sweeper(input) shouldEqual expected
   }
+
+  it should "return 3X5 expected list" in {
+    val input = List(
+      List('*','*','.','.','.'),
+      List('.','.','.','.','.'),
+      List('.','*','.','.','.'),
+      )
+
+    val expected = List(
+      List('*','*','1','0','0'),
+      List('3','3','2','0','0'),
+      List('1','*','1','0','0'),
+      )
+
+    Sweeper(input) shouldEqual expected
+  }
 }
