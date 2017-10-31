@@ -1,5 +1,0 @@
-[0m[[0minfo[0m] [0m[32mMinesweeperTestSuite:[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return an empty 2D list[0m[0m
-[0m[[0minfo[0m] [0m[32m- should return 2X2 expected list[0m[0m
-[0m[[0minfo[0m] [0m[31m- should return 4X4 expected list *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  List(List('*', '1', '0', '0'), List('1', '1', '0', '0'), List('0', '*', '1', '0'), List('0', '1', '1', '0')) did not equal List(List('*', '1', '0', '0'), List('2', '2', '1', '0'), List('1', '*', '1', '0'), List('1', '1', '1', '0')) (MinesweeperTestSuite.scala:18)[0m[0m
